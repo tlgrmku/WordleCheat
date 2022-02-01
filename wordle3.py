@@ -6,7 +6,7 @@ lname = input('Имя создаваемого файла: ')
 symbol = input('Буква: ')
 n = int(input('Местоположение буквы от 1 до 5: '))
 textfile = []
-with open(f'D:\\MyPython\\WordleCheat\\{fname}.txt', 'r', encoding='UTF-8') as f:
+with open(f'{fname}.txt', 'r', encoding='UTF-8') as f:
     for t in f.readlines():
         textfile.append(t.strip('\n'))
 
@@ -21,5 +21,5 @@ for word in textfile:
         pass
 
 print('Список готов!')
-with open(f'D:\\MyPython\\WordleCheat\\{lname}.txt', 'a', encoding='UTF-8') as f:
+with open(f'{lname}.txt', 'a', encoding='UTF-8') as f:
     f.writelines(templist)
