@@ -2,7 +2,7 @@
 Исключение слов с серыми буквами 
 '''
 textfile = [] 
-with open('D:\\MyPython\\WordleCheat\\words.txt', 'r', encoding='UTF-8') as f:
+with open('words.txt', 'r', encoding='UTF-8') as f:
     for t in f.readlines():
         textfile.append(t.strip('\n'))
 
@@ -34,7 +34,7 @@ for i in white:
             pass
 
 print('Список готов!')
-with open(f'D:\\MyPython\\WordleCheat\\{lname}.txt', 'a', encoding='UTF-8') as f:
+with open(f'{lname}.txt', 'a', encoding='UTF-8') as f:
     f.writelines(whitelist)
 
 
